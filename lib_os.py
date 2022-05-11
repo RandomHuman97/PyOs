@@ -37,7 +37,7 @@ def exitfile():
   t.sleep(3)
   exec(open("main.py").read())
 def safescan(filen):
-  with open(filen) as file_in:
+  with open(filen,encoding="utf8") as file_in:
     drcheck = ""
     for line in file_in:
         drcheck = drcheck + line

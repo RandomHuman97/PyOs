@@ -10,8 +10,10 @@ def apprun():
   usin = input("Choose an app to run.\n")
   if os.path.exists(usin):
       ran = True
+      import lib_os
       lib_exformat.linespace(10)
-      exec(open(usin).read())
+      lib_os.safescan(usin)
+      exec(open(usin,encoding="utf8").read())
   elif ran == False:
     print("Invalid file")
     #TODO: make input repeat until vaild file
@@ -23,4 +25,4 @@ for entry in os.scandir():
       if not entry.name in sysfiles:
         print(entry.name)
 print(pc.ENDCOLOR)
-apprun()
+apprun()  
