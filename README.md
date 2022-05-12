@@ -18,19 +18,11 @@ Replit is mainly used in situations where you may not have an easy time to use t
 The terminal is mainly used in situations where you can easily use the terminal or have bad internet.
 
 ### With Replit
-To install PyOs with Replit, go to the [GitHub repo](https://github.com/RandomHuman97/PyOs) and download PyOs as a zip file and unzip it.
+To install PyOs with Replit, go to the official [PyOs Replit](https://replit.com/@NicholasKarneye/PyOs) and fork it.
 
-![](/images/download.png)
+![](/images/fork.png)
 
-Then, go to [Replit](https://replit.com) and create a new Python Replit.
-
-![](/images/replit.png)
-
-Finally, upload the folder to the Replit.
-
-![](/images/file.png/)
-
-Tada! Your PyOs installation is complete!
+And tada! Your PyOs installation is complete! Now just click the run button and you should be able to use PyOs.
 
 ### Without Replit
 To install PyOs without Replit, go to the [GitHub repo](https://github.com/RandomHuman97/PyOs) and download PyOs as a zip file.
