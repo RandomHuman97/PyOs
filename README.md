@@ -1,12 +1,53 @@
 # PyOs Documentation
 ### Contents
-1. Using PyOs
+1. Installation
+    - With Replit
+    - Without Replit
+2. Using PyOs
    - Basic Features
    - Customizations
-2. Writing apps for PyOs
+3. Writing apps for PyOs
      - Required imports
      - Antivirus issues
      - System libraries
+# Installation
+There are many ways to run PyOs, but the main options are to use Replit, or use your Terminal.
+
+Replit is mainly used in situations where you may not have an easy time to use the terminal. It is slower as it is hosted on a server, but you don't have to do much to run it.
+
+The terminal is mainly used in situations where you can easily use the terminal or have bad internet.
+
+### With Replit
+To install PyOs with Replit, go to the [GitHub repo](https://github.com/RandomHuman97/PyOs) and download PyOs as a zip file and unzip it.
+
+![](/images/download.png)
+
+Then, go to [Replit](https://replit.com) and create a new Python Replit.
+
+![](/images/replit.png)
+
+Finally, upload the folder to the Replit.
+
+![](/images/file.png/)
+
+Tada! Your PyOs installation is complete!
+
+### Without Replit
+To install PyOs without Replit, go to the [GitHub repo](https://github.com/RandomHuman97/PyOs) and download PyOs as a zip file.
+
+![](/images/download.png)
+
+Then, unzip the file. Now, open up whatever terminal you use and type:
+```
+cd /path/to/pyos
+```
+(Change the path to whatever file path you have PyOs installed in)
+```
+python main.py
+```
+Tada! Now you should see PyOs run. 
+
+If not, make sure you have [Python](https://www.python.org/) installed. If that still doesn't work, make sure you are in the same directory as where the PyOs files are located.
 # Using PyOs
 PyOs (or just Pyos) is a faux operating system designed to give a semi-graphical interface to Python. This makes it much more user friendly, but it still has a slight learning curve.
 ### Basic Features
