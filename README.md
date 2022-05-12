@@ -165,10 +165,9 @@ PyOs has a built in simple antivirus. It's main goal is to stop users from accid
 However, sometimes certain code will trigger the antivirus, which this section will help you avoid.
 
 #### What you can't do =(
-- Importing any encryption api's (This will be removed soon when we can detect file writes)
 -  Deleting files
 -  Deleting folders
--  Writing to files (soon)
+-  Opening files
 - Import the OS module as any other alias
 
 Most of the times you can find a work-around, but if not, you're just kind of screwed at the moment.

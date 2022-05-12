@@ -44,7 +44,7 @@ def safescan(filen):
     drcheck = drcheck.lower()
     oscheck = "os.remove"
     oscheckforsneakybypassesbydumbpeople = "import os as"
-    if 'fernet' in drcheck or 'shutil.rmtree()' in drcheck or oscheck in drcheck or oscheckforsneakybypassesbydumbpeople in drcheck:
+    if 'fernet' in drcheck or 'shutil.rmtree()' in drcheck or oscheck in drcheck or oscheckforsneakybypassesbydumbpeople in drcheck or "=open(" in drcheck.strip().lower():
       print(pc.PURPLE+"***********************************\nWARNING\nTHIS FILE IS NOT SAFE\nIT MOST LIKELY CONTAINS MALWARE\nTHERE WILL BE AN ERROR AS IT IS THE ONLY WAY TO STOP THE PROGRAM\n***********************************\n\n\n\n\n\n\n\n\n\n\n\n")
       #pass compiler error to halt all functions
       FULLSTOPEXIT
