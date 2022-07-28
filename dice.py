@@ -43,6 +43,7 @@ def app():
     import lib_os
     print("Rolling dice...")
     t.sleep(1)
+    
     dice = random.randrange(1, 6)
     de(dice)
     print("You rolled a ",dice,"!",sep="")

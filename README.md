@@ -186,13 +186,16 @@ Runs the task-switcher.
 
 #### exitfile()
 Exit the current file and return back to PyOs
-#### safescan(file)
-Runs an antivirus scan on the *file* parameter.
-If a malicious program is detected, the OS will halt.
+#
 #### ***lib_exformat***
 All of the functions from the lib_exformat file, these functions are mainly used for extra formatting.
 #### linespace(amount)
 Prints a certain amount of linespaces, based on the *amount* parameter
-
+#
+#### ***lib_guard***
+All of the functions from the lib_guard file, this is mainly used to scan files for malware.
+#### safescan(file)
+Runs an antivirus scan on the *file* parameter.
+If a malicious program is detected, the OS will halt.
 ## The end.
 Self explanatory.

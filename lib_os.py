@@ -44,16 +44,3 @@ def exitfile():
     exec(open("main.py").read())
 
 
-def safescan(filen):
-    with open(filen, encoding="utf8") as file_in:
-        drcheck = ""
-        for line in file_in:
-            drcheck = drcheck + line
-        drcheck = drcheck.lower()
-        oscheck = "os.remove"
-        oscheckforsneakybypassesbydumbpeople = "import os as"
-        if 'fernet' in drcheck or 'shutil.rmtree()' in drcheck or oscheck in drcheck or oscheckforsneakybypassesbydumbpeople in drcheck or "=open(" in drcheck.strip().lower():
-            print(pc.PURPLE+"***********************************\nWARNING\nTHIS FILE IS NOT SAFE\nIT MOST LIKELY CONTAINS MALWARE\n***********************************\n\n\n\n\n\n\n\n\n\n\n\n")
-            # pass compiler error to halt all functions
-            raise Exception(
-                "Killed proccess due to antivirus while trying to open "+file_in)

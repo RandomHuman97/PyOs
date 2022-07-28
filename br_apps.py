@@ -3,6 +3,7 @@ import lib_exformat
 import pathlib
 import os
 import pc
+import lib_guard
 sysfiles = ["lib_exformat.py", "main.py",
             "lib_os.py", "br_apps.py", "boot.py", "pc.py"]
 # lists system files to be skipped and not shown
@@ -13,9 +14,9 @@ def apprun():
     usin = input("Choose an app to run.\n")
     if os.path.exists(usin):
         ran = True
-        import lib_os
+        import lib_guard
         lib_exformat.linespace(10)
-        lib_os.safescan(usin)
+        lib_guard.safescan(usin)
         exec(open(usin, encoding="utf8").read())
     elif ran == False:
         print("Invalid file")
