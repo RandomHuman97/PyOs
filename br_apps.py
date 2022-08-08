@@ -4,8 +4,11 @@ import pathlib
 import os
 import pc
 import lib_guard
-sysfiles = ["lib_exformat.py", "main.py",
-            "lib_os.py", "br_apps.py", "boot.py", "pc.py"]
+
+sysfiles = [
+    "lib_exformat.py", "main.py", "lib_os.py", "br_apps.py", "boot.py",
+    "pc.py", "lib_guard.py"
+]
 # lists system files to be skipped and not shown
 
 
@@ -21,13 +24,14 @@ def apprun():
     elif ran == False:
         print("Invalid file")
 
-
         # TODO: make input repeat until vaild file
+
+
 lib_os.mainheader()
-print(pc.RED+"APPS:"+pc.ENDCOLOR)
+print(pc.RED + "APPS:" + pc.ENDCOLOR)
 print(pc.PINK)
 for entry in os.scandir():
-    if pathlib.Path(os.getcwd()+entry.name).suffix == ".py":
+    if pathlib.Path(os.getcwd() + entry.name).suffix == ".py":
         if not entry.name in sysfiles:
             print(entry.name)
 print(pc.ENDCOLOR)
