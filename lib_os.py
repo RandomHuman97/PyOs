@@ -3,14 +3,15 @@ import os
 import sys
 import time as t
 import pc
+from replit import clear
 # colors:
 
 
 def mainheader():
-    lib_exformat.linespace(10)
+    clear()
     print(pc.YELLOW+"Py"+pc.CYAN+"Os"+pc.GREEN+" V1.0", end="")
     print(pc.RED+"    0.START    1.APPS    2.EXIT", end="")
-    print(pc.GREEN+"    by human0")
+    print(pc.GREEN+"    ")
     print(pc.ENDCOLOR)
 
 
@@ -18,16 +19,16 @@ def taskinp():
     wheretogo = input("Choose which task to go to.\n")
 
     def switchfocus():
-        args = ['0 ', '1 ', '2 ']
+        args = ['0', '1', '2']
         checkran = False
         if wheretogo == '0':
             checkran = True
             exec(open("main.py").read())
         if wheretogo == '1':
             checkran = True
-            exec(open("br_apps.py").read())
+            exec(open("br_apps.py").read()) 
         if wheretogo == '2':
-            lib_exformat.linespace(10)
+            clear()
             print("Goodbye!")
             checkran = True
             sys.exit()

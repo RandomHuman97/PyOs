@@ -1,6 +1,6 @@
 import os
 import sys
-from colorama import init
+import lib_os
 
-init()
-exec(open("boot.py").read())
+lib_os.mainheader()
+lib_os.taskinp()

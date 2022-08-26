@@ -3,11 +3,10 @@ import lib_exformat
 import pathlib
 import os
 import pc
-import lib_guard
-
+from replit import clear
 sysfiles = [
     "lib_exformat.py", "main.py", "lib_os.py", "br_apps.py", "boot.py",
-    "pc.py", "lib_guard.py"
+    "pc.py", "lib_guard.py","os_shell.py"
 ]
 # lists system files to be skipped and not shown
 
@@ -18,13 +17,11 @@ def apprun():
     if os.path.exists(usin):
         ran = True
         import lib_guard
-        lib_exformat.linespace(10)
+        clear()
         lib_guard.safescan(usin)
         exec(open(usin, encoding="utf8").read())
     elif ran == False:
         print("Invalid file")
-
-        # TODO: make input repeat until vaild file
 
 
 lib_os.mainheader()
